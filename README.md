@@ -1,11 +1,11 @@
 # UK-Road-Accident-Analysis-Dashboard
 # Executive Summary
 
-Road safety remains one of the most critical public policy issues in the United Kingdom. With thousands of casualties each year, understanding the factors contributing to road accidents can save lives, reduce injuries, and improve infrastructure planning.
+Road safety remains one of the most critical public policy issues in the United Kingdom. With thousands of casualties each year, understanding the factors contributing to road accidents can save lives, reduce injuries, and improve infrastructure planning. As per statistics - https://en.wikipedia.org/wiki/Reported_Road_Casualties_Great_Britain 
 
-This UK Road Accident Dashboard project provides a comprehensive analysis of road accident data across the UK using an interactive dashboard built in Microsoft Excel (and optionally Power BI). It explores patterns, trends, and contributing factors that influence accident frequency and severity.
+This UK Road Accident Dashboard project provides a comprehensive analysis of road accident data across the UK using an interactive dashboard built in Microsoft Excel. It explores patterns, trends, and contributing factors that influence accident frequency and severity.
 
-The project leverages real-world accident records, highlighting critical insights such as:
+The project leverages real-world accident 307974 records, highlighting critical insights such as
 
 Time-based accident trends (monthly, daily, and hourly distributions)
 
@@ -23,9 +23,9 @@ Ultimately, this project aims to empower decision-makers—including transport a
 Component	Description
 Project Title	UK Road Accident Dashboard
 Objective	To analyze road accident trends, identify high-risk conditions, and provide actionable insights for improving road safety.
-Tools Used	Microsoft Excel (Power Query, Pivot Tables, Charts, Dashboard), optionally Power BI
+Tools Used	Microsoft Excel (Power Query, Pivot Tables, Charts, Dashboard)
 Data Source	UK Department for Transport (open dataset on road safety)
-Time Period Covered	2022 (as per dataset sample)
+Time Period Covered	2021 & 2022 (as per dataset sample)
 Key Deliverable	Interactive dashboard summarizing accident trends and severity distribution
 
  #Data Description
@@ -57,122 +57,98 @@ Vehicle_Type	Category of vehicle involved (e.g., Car, Motorcycle, Bicycle, HGV, 
 
 2. Data Analytics Sheet
 
-Includes summarized KPIs and pivot-table-ready metrics such as:
+Includes summarized primary and secondary KPIs and pivot-table-ready metrics such as:
 
-Total number of accidents
-
+# KPI's
 Total casualties
+Total Number of fatal, Serious and Slight Accidents.
+Total Number of vehicle types by casualties
 
-Average casualties per accident
+# Pivot tables
+Segregations by severity - fatal, serious, slight in % and total numbers.
+Segergations by Urban and Rural area type.
+Segergation by Light conditions.
+Segergation by Road Type and Road surface.
+Segergation by Monthy trend and Time analysis.
 
-Segregations by severity, weather, and lighting
+# Process
+- Cleaned the data for anamolies and wrong text formats. Replaced values to correct values. 
+- Converted the sheet into table for pivot charts and data analysis.
+- Calculated the below by pivot chart and excel formulas for visualization - 
+- Total number of casualties.
+- Total number of casualties by severtiy - fatal, serious and slight.
+- Total number of casaulties by year (2021 and 2022)
+- Total number of casaulties by Road Type.
+- Total number of casualties by Road surface.
+- Total number of casualties by Area.
+- Total number of casualties by Light conditions.
+- Total number of casualties by Time analysis.
+- Created slicers by year, area type, accident dates for filtering the report.
+- Created structured tables for accident details, vehicle details, and aggregated KPIs.
+- Established relationships for dashboard filtering and slicing
 
-Breakdown of vehicle involvement and road condition impacts
 
-3. Dashboard
 
-Interactive visualization panel combining:
+# Interactive visualization panel combining:
 
-Dynamic filters for month, year, region, or vehicle type
+Dynamic filters for year, area and accident dates
+
+KPI Cards -
+Total count  for total number of casualties.
+Total count and pie chart for Fatal Casualties. Percentage distribution across categories.
+Total count and pie chart for Serious Casualties
+Total count and pie chart for Slight Casualties
+Total count and pie chart for Casualties By Car.
+
+Secondary KPI Card -
+Total count for casualties By Car - 177681
+Total count for casualties By Bus = 6225
+Total count for casualties By Bike - 18093
+Total count for casualties By Others - 1974
+Total count for casualties By Van - 17567
+Total count for casualties By Agriculture vehicle - 633.
 
 Charts for:
 
-Casualty count by road surface
+Line Chart to showcase casualties by Year.
+Clustered columns chart to showcase casualties by Road Type.
+Tree map to showcase casualties by Road surface.
+Pie chart to showcase casualties by area.
+Pie chart to showcase casualties by Light conditions.
+Area chart to showcase casualties by Time analysis.
 
-Accident frequency by time of day
 
-Severity analysis by weather condition
+# Dashboard Development:
 
-Distribution of accidents by urban/rural area
-
-KPI cards showing:
-
-Total accidents
-
-Fatalities
-
-Serious & Slight injuries
-
-Percentage distribution across categories
-
-# Methodology
-
-Data Collection:
-Data imported from UK Department for Transport’s open database (via CSV/Excel).
-
-Data Cleaning & Preparation:
-
-Removed null and duplicate records.
-
-Standardized column names and data types.
-
-Converted date-time columns for temporal analysis.
-
-Derived new features (Month, Year, Day of Week).
-
-Data Modeling:
-
-Created structured tables for accident details, vehicle details, and aggregated KPIs.
-
-Established relationships for dashboard filtering and slicing.
-
-Dashboard Development:
-
-Built KPI cards for quick insight.
-
-Developed bar, line, and donut charts for comparative visualizations.
-
-Implemented slicers for interactive filtering.
-
-Added conditional formatting to highlight high-risk trends.
+- Built KPI cards for quick insight.
+- Developed bar, line, and donut charts for comparative visualizations.
+- Implemented slicers for interactive filtering.
+- Added conditional formatting to highlight high-risk trends.
 
 # Key Insights
-
-Weather Conditions: Majority of accidents occurred under clear conditions, suggesting human error as a major factor.
-
-Lighting Conditions: A significant proportion of severe accidents occurred in dark but lit conditions (e.g., at night in urban areas).
-
-Vehicle Type: Cars dominate accident involvement, but motorcycles have a higher fatality rate per accident.
-
-Road Surface: Most accidents occurred on dry surfaces, but wet roads had proportionally higher severity.
-
-Urban vs Rural: Urban areas recorded more accidents, but rural accidents tend to be more severe.
-
-Peak Time: Evenings (4–7 PM) and weekends show the highest accident frequency.
+- Weather Conditions: Majority of accidents occurred under clear conditions, suggesting human error as a major factor.
+- Lighting Conditions: A significant proportion of severe accidents occurred in dark but lit conditions (e.g., at night in urban areas).
+- Vehicle Type: Cars dominate accident involvement, but motorcycles have a higher fatality rate per accident.
+- Road Surface: Most accidents occurred on dry surfaces, but wet roads had proportionally higher severity.
+- Urban vs Rural: Urban areas recorded more accidents, but rural accidents tend to be more severe.
+- Peak Time: Evenings (4–7 PM) and weekends show the highest accident frequency.
 
 # Key Performance Indicators (KPIs)
-KPI	Value (Example from Dataset)	Description
-Total Casualties	417,883	Total number of casualties reported
-Total Accidents	300,000+	Number of unique accidents recorded
-Average Casualties per Accident	~1.4	Average number of people injured per incident
-Most Common Severity	Slight	Majority of accidents were minor
-Most Common Road Type	Single Carriageway	Most frequent setting for reported accidents
+# KPI	Value
+- Total Casualties	417,883	Total number of casualties reported
+- Total Accidents	300,000+	Number of unique accidents recorded
+- Most Common Severity	Slight	Majority of accidents were minor
+- Most Common Road Type	Single Carriageway	Most frequent setting for reported accidents
 
 # Recommendations
-
-Enhance Road Lighting: Improve illumination in semi-lit urban zones.
-
-Public Awareness Campaigns: Focus on defensive driving and speeding awareness.
-
-Weather Alert Systems: Real-time driver alerts for slippery or foggy conditions.
-
-Infrastructure Improvement: Target high-frequency accident junctions for redesign.
-
-Speed Regulation Enforcement: Increase patrols and smart cameras in rural zones.
-
-# Future Scope
-
-Integrate Power BI / Tableau for advanced interactivity.
-
-Build a predictive model to estimate accident severity based on environmental factors.
-
-Add geospatial visualization (e.g., heatmaps for accident hotspots).
-
-Automate monthly updates using Power Query connections to live datasets.
-
+- Enhance Road Lighting: Improve illumination in semi-lit urban zones.
+- Public Awareness Campaigns: Focus on defensive driving and speeding awareness.
+- Weather Alert Systems: Real-time driver alerts for slippery or foggy conditions.
+- Infrastructure Improvement: Target high-frequency accident junctions for redesign.
+- Speed Regulation Enforcement: Increase patrols and smart cameras in rural zones.
 
 
 # Conclusion
 
 This project delivers a data-driven, visual exploration of UK road accidents that can directly support policy formulation, driver education, and infrastructure design.
-By providing actionable insights into when, where, and why accidents occur, the analysis contributes toward the UK’s Vision Zero initiative — aiming for zero road fatalities in the long term.
+By providing actionable insights into when, where, and why accidents occur, the analysis contributes toward the UK’s Vision Zero initiative aiming for zero road fatalities in the long term.
