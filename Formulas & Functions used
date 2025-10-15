@@ -1,0 +1,9 @@
+- CLeaned the data of 30000+ road accident entries for anomalies and wrong data types. Replaced wrong texts with the correct ones. 
+- Structured the data into the correct format and created a table.
+- From pivot table analyze, clubbed together duplicate categories of casualties, Vehicle types, road surface, road type, light conditions etc.
+- Created a Pivot tables for percentage calculation. calculated them as fatal count/(fatal count + other casualties)
+- Created a Monthly trend of casualties in a table format for visualization. 
+- Created time analysis of casualties by calculating the time on hourly basis - =MROUND(A22,"1:00") and formatted the columns in time format. Further visualized it using area chart.
+- To enhance the report filtering added slicers to filter the dashboard by Year, accident dates, and area type (Rural/Urban)
+- added icons from the insert icon options and added the necessary links to check the reported road casualties - https://en.wikipedia.org/wiki/Reported_Road_Casualties_Great_Britain
+- Created Data Analysis sheet for clearer view of all the data analysis conducted for the dashboard. 
